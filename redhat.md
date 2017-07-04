@@ -57,3 +57,15 @@ sudo pvs
 
 virt-manager for gui 
 changed is good in ansible, OK didnt have to do anything
+
+
+## Checking out the source code
+
+(15:55:19) Dan: yep, start at the top with the Getting started page
+(15:55:46) Dan: first thing to do is to make a new VM with RHEL6 installed on it which you can use for your development work
+(15:56:18) Dan: you can grab any RHEL trees you need from the local mirror
+(15:56:19) Dan: for example:
+(15:56:20) Dan: http://download.bne.redhat.com/pub/rhel/released/RHEL-6/6.9/Server/x86_64/os/
+(15:56:41) Dan: if you use virt-manager to create a new VM, and tell it you want to install from the network, and then give it that url -- it should figure out how to start the installer for you
+(15:56:48) Dan: and it will do everything over the network magically :-)
+(15:57:40) Dan: now would be a good time to figure out how to get libvirt to use logical volumes as well -- so that you can create your new RHEL6 VM with its disk on a logical volume
